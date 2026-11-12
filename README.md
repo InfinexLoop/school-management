@@ -74,11 +74,16 @@ This is a local product demonstration, not a production-certified school deploym
 - Detailed CRUD interfaces are strongest for admissions, payments and website content; several operational modules are database-backed reporting views rather than complete edit suites.
 - Certificate, report-card, receipt and payslip PDF generators are not implemented; print styling is present.
 - Promotion, graduation-to-alumni automation, parent-teacher booking, visitor editing, asset maintenance, leave approval and assignment submission need further interaction work.
-- No automated test suite, Playwright run, CI/CD workflow, formal QA gate or deployment configuration was created, per the master brief.
+- No automated test suite, Playwright run, CI/CD workflow or formal QA gate was added, per the release brief.
 
 ## Cloudflare deployment
 
 The public demonstration uses Cloudflare Workers through vinext and Cloudflare D1 for persistent relational records. The normal Next.js commands continue to use local SQLite; the vinext build aliases only the database transport to Prisma's D1 adapter.
+
+- Website: <https://school-management.pied-mugger-0k.workers.dev>
+- Login: <https://school-management.pied-mugger-0k.workers.dev/login>
+- Demo accounts: <https://school-management.pied-mugger-0k.workers.dev/demo-access>
+- Source: <https://github.com/InfinexLoop/school-management>
 
 ```bash
 # Verify both supported build paths
