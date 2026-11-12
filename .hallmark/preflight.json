@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-12",
+  "framework": "Next.js 16 App Router",
+  "fontStack": "Avenir Next and system UI",
+  "palette": "OKLCH semantic tokens in tokens.css",
+  "motion": "CSS transitions with reduced-motion support",
+  "spacing": "4px-derived semantic scale",
+  "source": "first project scan"
+}

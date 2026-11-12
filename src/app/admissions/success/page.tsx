@@ -1,0 +1,5 @@
+import Link from "next/link";
+import { CheckCircle2 } from "lucide-react";
+import { PublicPage } from "@/components/public-shell";
+
+export default async function Success({ searchParams }: { searchParams: Promise<{reference?:string;code?:string}> }) { const {reference,code}=await searchParams; return <PublicPage><section className="section"><div className="container" style={{maxWidth:720}}><div className="panel" style={{padding:"3rem"}}><div className="icon-box"><CheckCircle2/></div><h1 style={{fontSize:"clamp(2.3rem,6vw,5rem)",marginBlock:"1rem"}}>Application received.</h1><p>Your application is now visible to the admissions team. Save both details below; the verification code is shown only on this confirmation screen.</p><div className="card"><p>Application reference</p><h3>{reference}</h3><p>Verification code</p><h3>{code}</h3></div><div className="notice" style={{marginBlock:"1rem"}}>This is an in-app acknowledgement. No email or SMS delivery is claimed.</div><Link className="button" href="/admissions#track">Track application</Link></div></div></section></PublicPage>; }
